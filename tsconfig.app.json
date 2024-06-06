@@ -1,0 +1,26 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": [
+    "env.d.ts",
+    "cypress.config.ts",
+    "src/**/*",
+    "src/**/*.vue",
+    "src/modules/truck/__tests__/.spec copy.ts"
+  ],
+  "exclude": [
+    "src/**/__tests__/*"
+  ],
+  "types": [
+    "cypress"
+  ],
+  "compilerOptions": {
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  }
+}
